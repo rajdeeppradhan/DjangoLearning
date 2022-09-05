@@ -1,0 +1,15 @@
+{% comment %} {% load static %}
+
+<link rel="stylesheet" href="{% static 'style.css' %}" >
+
+<h1> Welcome to my html file </h1> {% endcomment %}
+
+<h2> Welcome back {{ fullname }}</h2>
+
+<form action="" method="GET" >
+    {% csrf_token %}
+    <label> Input a sentence</label>
+    <textarea type="text" name="sentence" ></textarea>
+    <input type="submit" />
+
+</form>
